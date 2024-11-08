@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './components.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+  font-family: 'Inter';
+}
+
+.active-route img,
+.white-invert:hover img {
+  filter: brightness(0) invert(1);
+}
+
+@layer utilities {
+  .active-hover-img img,
+  .hover-img:hover img {
+    filter: brightness(0) invert(1);
+  }
+}
